@@ -190,9 +190,11 @@ body{
     }
 }
 
+
 .heroSection-3 {
     background-color: #FFFFFF;
     padding: 70px 0 50px;
+    
     
     .text {
         text-align: center;
@@ -215,22 +217,28 @@ body{
     max-height: 40%;
 
     .grid-layout {
-        /* background-color: red; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         margin: 0 auto;
+        padding: 30px 50px;
 
         .grid {
-            /* background-color: #003AA5; */
             background-color: #ffffff;
             border-radius: 30px;
-            box-shadow:  0 4px 6px rgba (0, 0, 0, 0.2), 4px 0 6px rgba (0, 0, 0, 0.2 ), -4px 0 6px rgba (0, 0, 0, 0.2);
+            box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+            max-height: 500px;
+            position: relative;
             display: flex;
             flex-direction: column;
             padding: 30px 10px 0 30px;
-            color: #ffffff;
-            
+            color: #3D3D3D;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: -6px 0 10px rgba(0, 0, 0, 0.3), 0 6px 10px rgba(0, 0, 0, 0.3);
+            }
 
             h2 {
                 font-size: 25px;
@@ -248,40 +256,38 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                /* background-color: wheat; */
+            }
 
-                .bottom-left {
-                    display: flex;
-                    align-items: center;
-                    /* background-color: #003AA5; */
-                    height: 10%;
-                    gap: 20px;
+            .bottom-left {
+                display: flex;
+                align-items: center;
+                height: 10%;
+                gap: 20px;
 
-                    img {
-                        max-width: 50%;
-                        background-color: red;
-                        height: 30%;
-                        object-fit: cover;
-                    }
-
-                    h4 {
-                        font-size: 20px;
-                        font-weight: 500;
-                    }
-                }
-
-                .bottom-right {
-                    img {
-                        margin-left: 60%;
-                    }
+                img {
+                    max-width: 50%;
+                    height: 30%;
+                    object-fit: cover;
                 }
             }
 
-            
+            h4 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .bottom-right {
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
         }
 
         .grid:hover {
             background-color: #003AA5;
+            color: #ffffff;
             cursor: pointer;
         }
     }
@@ -306,32 +312,92 @@ body{
 }
 
 .heroSection-6 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding:  40px;
     color: #FFFFFF;
+    gap: 20px;
+    max-height: 100vh;
 
-    .left-heroSection-6 {
+    .header {
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .rightBorder {
+        padding: 10px 0;
+    }
+    
+    .first {
+        display: flex;
+        gap: 20px;
+        padding: 10px 0;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .second {
+        display: flex;
+        gap: 30px;
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .border {
+            border: 1px solid #FFFFFF;
+            height: 60px;
+            margin-top: 10px;
+        }
+    }
+
+    .right-heroSection-6 {
+        width: 100%;
+       img {
+            height: 70%;
+
+       }
+    }
+
+
+    /* .left-heroSection-6 {
         display: flex;
         flex-direction: column;
         gap: 20px;
-    }
-
-    /* .div-left {
-        .border {
-            
-        }
     } */
 
-    .div-1 {
+    /* .border-left {
+        border: 1px solid #FFFFFF;
+        height: 50px;
+    } */
+
+    /* .div-left {
+        border-left: 1px solid #080808;
+        height: 50px;
+    } */
+
+    /* .divMain {
+        d
+    } */
+
+    /* .div-1 {
         display: flex;
         gap: 10px;
     }
-    
-    .button {
+     */
+    /* .button {
         img{
             max-width: 10%;
         }
-    }
+    } */
 
     /* .divMain {
         
