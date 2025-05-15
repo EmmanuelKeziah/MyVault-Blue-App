@@ -319,124 +319,184 @@ body{
     gap: 20px;
     max-height: 100vh;
 
-    .header {
-        h2 {
-            font-size: 40px;
-            font-weight: 600;
-        }
-
-        p {
-            font-size: 20px;
-            font-weight: 500;
-        }
-    }
-
-    .rightBorder {
-        padding: 10px 0;
-    }
-    
-    .first {
-        display: flex;
-        gap: 20px;
-        padding: 10px 0;
-        font-size: 30px;
-        font-weight: 500;
-    }
-
-    .second {
-        display: flex;
-        gap: 30px;
-
-        p {
-            font-size: 18px;
-            font-weight: 500;
-        }
-
-        .border {
-            border: 1px solid #FFFFFF;
-            height: 60px;
-            margin-top: 10px;
-        }
-    }
-
     .right-heroSection-6 {
         width: 100%;
        img {
             height: 70%;
-
-       }
+        }
     }
 
-
-    /* .left-heroSection-6 {
+    .button {
         display: flex;
-        flex-direction: column;
-        gap: 20px;
-    } */
+        justify-content: center;
+        gap: 5px;
+        align-items: center;
+        max-width: 30%;
+        border-radius: 25px;
+        padding: 12px;
+        color: #178FEB;
+        font-size: 18px;
 
-    /* .border-left {
-        border: 1px solid #FFFFFF;
-        height: 50px;
-    } */
-
-    /* .div-left {
-        border-left: 1px solid #080808;
-        height: 50px;
-    } */
-
-    /* .divMain {
-        d
-    } */
-
-    /* .div-1 {
-        display: flex;
-        gap: 10px;
-    }
-     */
-    /* .button {
         img{
-            max-width: 10%;
+            max-width: 20%;
         }
-    } */
-
-    /* .divMain {
-        
-        display: flex;
-        background-color: red;
-        width: 50px;
-
-        .div-left {
-            background-color: teal;
-            display: flex;
-            gap: 8px;
-            
-            
-            .borderNum {
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-
-                .border-left {
-                    width: 10px;
-                    border-left: 1px solid #FFFFFF;
-                }
-            }
-        }
-    } */
+    }
 }
 
+.header {
+    padding: 20px 0;
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.rightBorder {
+    padding: 10px 0;
+}
+
+.first {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.second {
+    display: flex;
+    gap: 30px;
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .border {
+        border: 1px solid #FFFFFF;
+        height: 60px;
+        margin-top: 10px;
+    }
+}
+
+.heroSection-7 {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+
+    .left-heroSection-7 {
+        padding-top: 60px;
+
+        img {
+            max-width: 90%;
+        }
+    }
+
+    .border {
+        border-color: #003AA5;
+    }
+
+    .button {
+        background-color: #084bc7;
+        color: #FFFFFF;
+        font-size: 18px;
+    }
+
+    .right-heroSection-7 {
+        p {
+            color: #003AA5 ;
+        }
+
+        .header {
+            h2 {
+                color: #003AA5;
+            }
+        }
+        
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 40%;
+            padding: 12px;
+            border-radius: 25px;
+        }
+
+        img {
+            max-width: 20%;
+        }
+    }
+}
+
+.heroSection-8 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: #FFFFFF;
+    padding : 40px;
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        max-width: 30%;
+        border-radius: 25px;
+
+        img {
+            max-width: 40%;
+        }
+    }
+
+    .right-heroSection-8 {
+        padding-top: 50px;
+        img {
+            width: 90%;
+            height: auto;
+        }
+    }
+
+    .left-heroSection-8 {
+        max-width: 80%;
+    }
+
+    button {
+        outline: none;
+        border: none;
+    }
+}
 
 
 footer{
     width: 100vw;
     height: 100vh;
     background-color: #C8D1E3;
-}
 
-.footerFlex{
-    display: flex;
     img{
         max-width: 200px;
     }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .footerFlex{
+        display: flex;
+       gap: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px 40px 20px;
+        
+    }
 }
+
+
 
