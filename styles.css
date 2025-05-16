@@ -3,21 +3,46 @@
     box-sizing: border-box;
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    outline: none;
+    border: none;
+    /* max-width: 30%; */
+    border-radius: 25px;
+    /* padding: 12px; */
+    /* color: #178FEB; */
+    font-size: 18px;
+
+    img{
+        max-width: 10%;
+    }
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #003AA5;
 }
 
 #main-container {
-    max-width: 90%;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .button {
-    padding: 10px 25px;
-    border-radius: 10px;
-    border: 1px solid #003AA5;
+    /* padding: 10px; */
+    /* border-radius: 10px; */
+    /* border: 1px solid #003AA5; */
     outline: none;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    max-width: 40%;
+    padding: 12px;
+    border-radius: 25px;
+
 }
 
 .button:hover {
@@ -39,6 +64,8 @@ body{
 .white {
     color: #003AA5;
     background-color: white;
+    border: 1px solid #003AA5;
+    outline: none;
 }
 
 .nav-bar {
@@ -88,6 +115,7 @@ body{
 .heroSection-1 {
     display: flex;
     justify-content: space-between;
+   
 
     .left-heroSection-1 {
         display: flex;
@@ -126,7 +154,7 @@ body{
             display: flex;
             gap: 20px;
 
-            button{
+            /* button{
                 display: flex;
                 justify-content: center;
                 gap: 8px;
@@ -134,11 +162,12 @@ body{
                 img {
                     max-width: 20%;
                 }
-            }
+            } */
         }
     }
 
     .right-heroSection-1 {
+        max-width: 50%;
         padding-top: 20px;
         img {
             max-height: 90%;
@@ -214,7 +243,8 @@ body{
 
 .heroSection-4 {
     background-color: #FFFFFF;
-    max-height: 40%;
+    max-height: 100%;
+    background-color: red;
 
     .grid-layout {
         display: grid;
@@ -227,7 +257,8 @@ body{
             background-color: #ffffff;
             border-radius: 30px;
             box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
-            max-height: 500px;
+            height: 550px;
+            gap: 20px;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -249,7 +280,8 @@ body{
                 font-size: 18px;
                 max-width: 60%;
                 line-height: 1.5;
-                margin-top: 30px;
+                margin: 30px 0;
+
             }
 
             .bottom-layout {
@@ -265,10 +297,14 @@ body{
                 gap: 20px;
 
                 img {
-                    max-width: 50%;
-                    height: 30%;
-                    object-fit: cover;
+                    max-width: 20%;
+                    max-height: 30%;
                 }
+            }
+
+            .button {
+                position: absolute;
+                bottom: 10px;
             }
 
             h4 {
@@ -313,34 +349,29 @@ body{
 
 .heroSection-6 {
     display: grid;
+    margin: 0 auto;
+    max-width: 1300px;
     grid-template-columns: repeat(2, 1fr);
     padding:  40px;
     color: #FFFFFF;
     gap: 20px;
-    max-height: 100vh;
+    height: 50%;
+
+    .left-heroSection-6 {
+        max-width: 100%;
+
+    }
 
     .right-heroSection-6 {
-        width: 100%;
+        max-width: 100%;
        img {
-            height: 70%;
+            max-width: 100%;
         }
     }
 
-    .button {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        align-items: center;
-        max-width: 30%;
-        border-radius: 25px;
-        padding: 12px;
-        color: #178FEB;
-        font-size: 18px;
+    
 
-        img{
-            max-width: 20%;
-        }
-    }
+   
 }
 
 .header {
@@ -388,7 +419,6 @@ body{
     background-color: #FFFFFF;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    padding: 20px;
 
     .left-heroSection-7 {
         padding-top: 60px;
@@ -419,19 +449,19 @@ body{
             }
         }
         
-        .button {
+        /* .button {
             display: flex;
             align-items: center;
             justify-content: center;
             max-width: 40%;
             padding: 12px;
             border-radius: 25px;
-        }
+        } */
 
-        img {
+        /* img {
             max-width: 20%;
-        }
-    }
+        } */
+    } 
 }
 
 .heroSection-8 {
@@ -440,7 +470,7 @@ body{
     color: #FFFFFF;
     padding : 40px;
 
-    button {
+    /* button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -451,7 +481,7 @@ body{
         img {
             max-width: 40%;
         }
-    }
+    } */
 
     .right-heroSection-8 {
         padding-top: 50px;
@@ -465,15 +495,38 @@ body{
         max-width: 80%;
     }
 
-    button {
-        outline: none;
-        border: none;
+    
+}
+
+.heroSection-9 {
+    color: #FFFFFF;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-heroSection-9 {
+        max-width: 50%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .right-heroSection-9 {
+        .first {
+            align-items: center;
+        }
+
+        .second {
+            align-items: center;
+        }
+
+        
     }
 }
 
-
 footer{
-    width: 100vw;
     height: 100vh;
     background-color: #C8D1E3;
 
@@ -488,13 +541,40 @@ footer{
         padding: 40px 20px;
     }
 
-    .footerFlex{
+    .footerFlex {
         display: flex;
-       gap: 30px;
+        gap: 30px;
         justify-content: center;
         align-items: center;
         padding: 0 20px 40px 20px;
-        
+
+        img {
+            max-width: 70%;
+        }
+    }
+
+    .footerGrid {
+        .footerGrid-1 {
+            display: flex;
+            flex-direction: column;
+            max-width: 20%;
+           
+        }
+
+        .footerGrid-1 {
+            gap: 20px;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+
+        .footerIcons {
+            img {
+                max-width: 10%;
+            }
+        }
     }
 }
 
