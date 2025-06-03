@@ -3,8 +3,9 @@
     box-sizing: border-box;
 }
 
-body {
-    */remove this.*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #003AA5;
 }
 
 .button {
@@ -14,44 +15,30 @@ body {
     align-items: center;
     outline: none;
     border: none;
-    /* max-width: 30%; */
-    border-radius: 25px;
-    /* padding: 12px; */
-    /* color: #178FEB; */
     font-size: 18px;
-
-    img{
-        max-width: 10%;
-    }
-}
-
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #003AA5;
-}
-
-#main-container {
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.button {
-    /* padding: 10px; */
-    /* border-radius: 10px; */
-    /* border: 1px solid #003AA5; */
-    outline: none;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
     max-width: 40%;
     padding: 12px;
-    border-radius: 25px;
+    border-radius: 20px;
 
+    img{
+        max-width: 20%;
+    }
 }
 
 .button:hover {
     transition: all 350ms;
     cursor: pointer;
+}
+
+.buttons{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#main-container {
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .blue {
@@ -74,7 +61,6 @@ body{
 
 .nav-bar {
     background-color: white;
-    padding: 18px;
     max-width: 90vw;
     font-size: 24px;
     display: flex;
@@ -87,6 +73,13 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 30px;
+
+            a{
+                text-decoration: none;
+                color: #3D3D3D;
+                font-weight: 400;
+            }
         
     }
     
@@ -95,18 +88,8 @@ body{
         align-items: center;
         gap: 70px;
         width: 40%;
-        
-        .nav-icons{
-            display: flex;
-            gap: 30px;
-
-            a{
-                text-decoration: none;
-                color: #3D3D3D;
-                font-weight: 400;
-            }
-        }
     }
+
     .nav-right{
         display: flex;
         width: 30%;
@@ -248,7 +231,6 @@ body{
 .heroSection-4 {
     background-color: #FFFFFF;
     max-height: 100%;
-    background-color: red;
 
     .grid-layout {
         display: grid;
@@ -371,11 +353,7 @@ body{
        img {
             max-width: 100%;
         }
-    }
-
-    
-
-   
+    }   
 }
 
 .header {
@@ -452,19 +430,6 @@ body{
                 color: #003AA5;
             }
         }
-        
-        /* .button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 40%;
-            padding: 12px;
-            border-radius: 25px;
-        } */
-
-        /* img {
-            max-width: 20%;
-        } */
     } 
 }
 
@@ -473,19 +438,6 @@ body{
     grid-template-columns: repeat(2,1fr);
     color: #FFFFFF;
     padding : 40px;
-
-    /* button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        max-width: 30%;
-        border-radius: 25px;
-
-        img {
-            max-width: 40%;
-        }
-    } */
 
     .right-heroSection-8 {
         padding-top: 50px;
@@ -503,11 +455,12 @@ body{
 }
 
 .heroSection-9 {
-    color: #FFFFFF;
+    background: #FFFFFF;
     padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #003AA5;
 
     .left-heroSection-9 {
         max-width: 50%;
@@ -515,6 +468,10 @@ body{
         img {
             max-width: 100%;
         }
+    }
+
+    .border {
+        border-color: #003AA5;
     }
 
     .right-heroSection-9 {
@@ -525,8 +482,6 @@ body{
         .second {
             align-items: center;
         }
-
-        
     }
 }
 
